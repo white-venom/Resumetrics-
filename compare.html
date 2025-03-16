@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI CV Checker - Comparator</title>
+    <link rel="stylesheet" href="compare.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">Resumetrics</div>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="check.html" id="checkLink">Check</a></li>
+            <li><a href="compare.html" id="compareLink">Comparator</a></li>
+                    </ul>
+    </nav>
+    <div class="auth-buttons">
+        <button>Sign In</button>
+        <button>Sign Up</button>
+    </div>
+</header>
+
+<div id="main-content">
+    <!-- Centered Comparator Box with two drag-and-drop areas -->
+    <div class="upload-box">
+        <div id="fileUploadArea1">
+            <p>Drag and drop the first CV here or click below to choose a file</p>
+            <input type="file" id="fileInput1" hidden />
+            <button id="uploadBtn1">CHOOSE FILE</button>
+        </div>
+        <div id="fileUploadArea2">
+            <p>Drag and drop the second CV here or click below to choose a file</p>
+            <input type="file" id="fileInput2" hidden />
+            <button id="uploadBtn2">CHOOSE FILE</button>
+        </div>
+        <button id="compareBtn">COMPARE</button>
+    </div>
+</div>
+
+<script src="compare.js"></script>
+</body>
+</html>

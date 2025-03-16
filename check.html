@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="check.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <title>AI CV Checker</title>
+</head>
+<body class="background">
+
+<header>
+    <div class="logo">Resumetrics</div>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="check.html" id="checkLink">Check</a></li>
+            <li><a href="compare.html" id="compareLink">Comparator</a></li>
+        </ul>
+    </nav>
+    <div class="auth-buttons">
+        <button>Sign In</button>
+        <button>Sign Up</button>
+    </div>
+</header>
+
+<div id="main-content">
+
+    <div class="check-cv-box">
+        <h1>Check Your CV</h1>
+        <p>Upload your CV for an AI-powered analysis!</p>
+    </div>
+
+    <!-- Flex container for both boxes -->
+    <div class="box-container">
+        <!-- First larger box -->
+        <div class="upload-box">
+            <div id="fileUploadArea">
+                <p>Drag and drop your CV here or click below to upload</p>
+                <input type="file" id="fileInput" hidden />
+                <button id="uploadBtn">Upload CV</button>
+                <button id="cancelBtn">Cancel</button>
+            </div>
+        </div>
+        
+        
+        
+        <!-- Second smaller box on the right with a Show button -->
+        <div class="small-box">
+            <p>Results</p>
+            <button id="showButton">Show</button>
+            <div id="responseArea" style="display:none;">
+                <p id="response">No data available</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="check.js"></script>
+</body>
+</html>

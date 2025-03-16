@@ -1,0 +1,233 @@
+/* General Reset */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+/* Background and Body */
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #ECF0F1;
+    background-color: #2C3E50;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Header */
+header {
+    background: #2C3E50;
+    color: #ECF0F1;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3.5em;
+    font-weight: bold;
+    color: #E74C3C;
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li a {
+    color: #ECF0F1;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #E74C3C;
+}
+
+.auth-buttons button {
+    padding: 10px 20px;
+    font-family: 'Poppins', sans-serif;
+    color: #ECF0F1;
+    background-color: #E74C3C;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.auth-buttons button:hover {
+    background-color: #2C3E50;
+    transform: scale(1.05);
+}
+
+/* Main Content */
+#main-content {
+    margin-top: 80px; /* Adjust spacing below the sticky header */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.check-cv-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(44, 62, 80, 0.7); /* Slight transparent background for the box */
+    border-radius: 10px;
+    padding: 20px;
+    width: 60%; /* Adjust the width as needed */
+    margin-bottom: 30px; /* Space below the box */
+    color: #ECF0F1; /* Text color inside the box */
+}
+
+.check-cv-box h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #E74C3C;
+    margin-bottom: 10px;
+}
+
+.check-cv-box p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2em;
+    color: #ECF0F1;
+}
+
+
+/* Hero Section (Centered above the boxes) */
+.hero {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: var(--hero-padding-top, 60px) var(--hero-padding-left-right, 0); /* Customizable padding */
+    margin-bottom: var(--hero-margin-bottom, 40px); /* Customizable margin below */
+}
+
+/* Box for Heading and Tagline */
+.hero-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(44, 62, 80, 0.7); /* Slight transparent background for the box */
+    border-radius: 10px;
+    padding: 20px;
+    width: 60%; /* Adjust the width as needed */
+    margin-bottom: 30px; /* Space below the box */
+}
+
+.hero-box h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #E74C3C;
+    margin-bottom: var(--heading-margin-bottom, 10px); /* Customizable margin below heading */
+    padding-top: var(--heading-padding-top, 0); /* Customizable padding for the heading */
+}
+
+.hero-box .tagline {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    color: #ECF0F1;
+    margin-top: var(--tagline-margin-top, 0); /* Customizable margin for tagline */
+    padding-top: var(--tagline-padding-top, 0); /* Customizable padding for tagline */
+}
+
+/* Box Container (Ensure spacing between heading and boxes) */
+.box-container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    gap: 20px;
+    margin-top: var(--box-container-margin-top, 20px); /* Customizable margin between heading and boxes */
+    align-items: flex-start;
+}
+
+/* Upload Box */
+.upload-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 60%;
+    height: 250px;
+    border: 2px dashed #E74C3C;
+    background-color: rgba(44, 62, 80, 0.7);
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    color: #ECF0F1;
+}
+
+.upload-box p {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.upload-box button {
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #E74C3C;
+    color: #ECF0F1;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+    font-family: 'Poppins', sans-serif;
+}
+
+.upload-box button:hover {
+    background-color: #2C3E50;
+    transform: scale(1.05);
+}
+
+/* Small Box */
+.small-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 35%;
+    height: 250px;
+    border: 2px dashed #E74C3C;
+    background-color: rgba(44, 62, 80, 0.7);
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    color: #ECF0F1;
+}
+
+.small-box p {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.small-box button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #E74C3C;
+    color: #ECF0F1;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+    font-family: 'Poppins', sans-serif;
+}
+
+.small-box button:hover {
+    background-color: #2C3E50;
+    transform: scale(1.05);
+}

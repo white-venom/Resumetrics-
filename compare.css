@@ -1,0 +1,193 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif; /* Poppins for body and main text */
+    margin: 0;
+    padding: 0;
+    background-color: #2C3E50;
+    color: #ECF0F1;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Header Styles */
+header {
+    background-color: #2C3E50; /* Same as check header */
+    color: white;
+    padding: 20px 40px; /* Same padding for consistency */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensures the header stays on top */
+}
+
+/* Logo */
+header .logo {
+    font-family: 'Poppins', sans-serif; /* Poppins for logo */
+    font-size: 3.5em; /* Logo size same as check */
+    font-weight: bold;
+    color: #E74C3C; /* Logo color */
+}
+
+/* Navigation */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    font-family: 'Poppins', sans-serif; /* Poppins for nav links */
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #E74C3C;
+}
+
+/* Auth Buttons */
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.auth-buttons button {
+    font-family: 'Poppins', sans-serif; /* Poppins for buttons */
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #E74C3C;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.auth-buttons button:hover {
+    background-color: #2C3E50;
+}
+
+/* Hero Section in Header (Heading and Tagline) */
+.hero-box {
+    width: 100%;
+    text-align: center; /* Center the heading and tagline */
+    margin-top: 80px; /* Space below the sticky header */
+}
+
+.hero-box h1 {
+    font-family: 'Poppins', sans-serif; /* Poppins for heading */
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #E74C3C;
+    margin-bottom: 10px;
+}
+
+.hero-box .tagline {
+    font-family: 'Montserrat', sans-serif; /* Montserrat for tagline */
+    font-size: 1.2em;
+    color: #ECF0F1;
+    margin-top: 10px;
+}
+
+/* Main Content Styles */
+#main-content {
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 150px; /* Adjust space below the header */
+}
+
+/* Centered Comparator Box with two drag-and-drop areas */
+.upload-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 60%;
+    height: 250px;
+    border: 2px dashed #E74C3C; /* Border color */
+    background-color: rgba(44, 62, 80, 0.7); /* Semi-transparent background */
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    color: #ECF0F1;
+}
+
+.upload-box p {
+    font-family: 'Montserrat', sans-serif; /* Montserrat for upload box text */
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.upload-box button {
+    font-family: 'Poppins', sans-serif; /* Poppins for upload button */
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #E74C3C;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.upload-box button:hover {
+    background-color: #2C3E50;
+    transform: scale(1.05);
+}
+
+/* Small Box */
+.small-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 35%;
+    height: 250px;
+    border: 2px dashed #E74C3C;
+    background-color: rgba(44, 62, 80, 0.7);
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    color: #ECF0F1;
+}
+
+.small-box p {
+    font-family: 'Montserrat', sans-serif; /* Montserrat for small box text */
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.small-box button {
+    font-family: 'Poppins', sans-serif; /* Poppins for small box button */
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #E74C3C;
+    color: #ECF0F1;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+    font-family: 'Poppins', sans-serif;
+}
+
+.small-box button:hover {
+    background-color: #2C3E50;
+    transform: scale(1.05);
+}
